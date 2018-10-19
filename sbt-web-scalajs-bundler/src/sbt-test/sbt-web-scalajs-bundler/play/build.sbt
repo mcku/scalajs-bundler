@@ -30,3 +30,5 @@ val server =
 val play =
   project.in(file("."))
     .aggregate(client, server)
+
+ivyLoggingLevel in ThisBuild := UpdateLogging.Quiet
